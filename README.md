@@ -1,0 +1,2 @@
+# WN10-AU-000500
+STIG Remediation WN10-AU-000500
