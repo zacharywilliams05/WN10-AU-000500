@@ -27,6 +27,7 @@ STIG Remediation WN10-AU-000500
     PS C:\> .\__remediation_template(STIG-ID-WN10-AU-000500).ps1 
 #>
 
+```powershell
 # Define the registry path and value
 $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application"
 $valueName = "MaxSize"
@@ -57,3 +58,4 @@ if (-not (Test-Path $registryPath)) {
         Write-Host "The registry value '$valueName' is configured correctly with a value of $($registryValue.$valueName)."
     }
 }
+```
